@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOP CYBERSCAN - Jheyson Heredia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-grid">
+
+    <!-- Header / Navbar -->
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom border-info border-opacity-25">
+        <h2 class="Orbitron text-info m-0 fs-4"><span class="text-white">DOP</span> CYBERSCAN</h2>
+        <div class="profile-header">
+            <img src="perfil.jpg" alt="Jheyson" class="profile-thumb border border-info rounded-circle">
+        </div>
+    </header>
+
+    <!-- Sección de Perfil Profesional -->
+    <div class="container mt-4 text-center">
+        <h1 class="Orbitron text-white mb-0">Jheyson Heredia Javier</h1>
+        <p class="text-info fw-bold">Senior Fintech Developer</p>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-8">
+                <p class="text-muted small">Especialista en arquitecturas Full-Stack e integración de Inteligencia Artificial avanzada para el sector financiero.</p>
+            </div>
+        </div>
+        
+        <!-- Tech Stack Pequeño -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <span class="badge border border-info text-info">React / Vue</span>
+            <span class="badge border border-purple text-purple">Laravel / Python</span>
+            <span class="badge border border-success text-success">AI Integration</span>
+        </div>
+    </div>
+
+    <!-- Calculador Maestro (Como en la imagen) -->
+    <div class="container">
+        <div class="calculator-box mx-auto p-4 mb-5 border border-info rounded shadow-lg text-center">
+            <h2 class="Orbitron text-info mb-4">Calculador Maestro</h2>
+            <div class="input-group mb-2">
+                <span class="input-group-text bg-info bg-opacity-10 text-info border-info">RD$</span>
+                <input type="number" id="masterInput" class="form-control bg-transparent text-white border-info" value="1000">
+            </div>
+            <small class="text-muted">Introduce un monto para actualizar todas las divisas en tiempo real.</small>
+        </div>
+
+        <!-- Grid de Divisas -->
+        <div class="row g-4" id="currencyGrid">
+            <!-- Cargando... -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+:root {
+    --neon-blue: #00f3ff;
+    --neon-purple: #bc13fe;
+    --neon-green: #39ff14;
+}
+
+body {
+    background-color: #020202;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+}
+
+/* Efecto de Cuadrícula de Fondo */
+.bg-grid {
+    background-image: 
+        linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 243, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.Orbitron { font-family: 'Orbitron', sans-serif; }
+
+.profile-thumb { width: 45px; height: 45px; object-fit: cover; }
+
+.calculator-box {
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.text-purple { color: var(--neon-purple); }
+.border-purple { border-color: var(--neon-purple) !important; }
+
+/* Tarjetas de Divisas */
+.cyber-card {
+    background: rgba(10, 10, 10, 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.neon-border-azul { border: 1px solid var(--neon-blue); box-shadow: 0 0 15px rgba(0, 243, 255, 0.1); }
+.neon-border-púrpura { border: 1px solid var(--neon-purple); box-shadow: 0 0 15px rgba(188, 19, 254, 0.1); }
+.neon-border-verde { border: 1px solid var(--neon-green); box-shadow: 0 0 15px rgba(57, 255, 20, 0.1); }
+.neon-border-morado { border: 1px solid #6f42c1; box-shadow: 0 0 15px rgba(111, 66, 193, 0.1); }
+
+.flag-img { width: 35px; border-radius: 3px; }
+
+input:focus {
+    box-shadow: 0 0 10px var(--neon-blue) !important;
+    border-color: var(--neon-blue) !important;
+}
